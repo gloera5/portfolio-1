@@ -1,0 +1,182 @@
+html {
+    background: rgba(40, 40, 50, 1);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Source Code Pro';
+  font-weight: 200;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: color .4s ease-in;
+  -moz-transition: color .4s ease-in;
+  -o-transition: color .4s ease-in;
+  -ms-transition: color .4s ease-in;
+  transition: color .4s ease-in;
+  /* color: rgba(215, 118, 44, 0.9); */
+  font-family: 'Source Code Pro';
+  font-weight: 200;
+}
+
+p:hover {
+  /* color: rgba(215, 118, 44, 0.9);*/
+  color: #15C46C;
+  -webkit-transition: color .4s ease-in;
+  -moz-transition: color .4s ease-in;
+  -o-transition: color .4s ease-in;
+  -ms-transition: color .4s ease-in;
+  transition: color .4s ease-in;
+}
+
+input[type='submit'] {
+  font-family: 'Source Code Pro';
+  font-weight: 200;
+  display: block;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(30, 30, 40, 1);
+}
+
+input[type='submit']:focus {
+  color: #15C46C;
+  background-color: rgba(30, 30, 40, 1);
+}
+
+a {
+    font-family: 'Source Code Pro';
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: color .4s ease-in;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -ms-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+}
+
+a:link {
+    /*font-family: 'Source Code Pro', ;*/
+    /*font-weight: 200;*/
+    text-decoration: none;
+    background-color: rgba(30, 30, 40, 1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #15C46C;
+    border-right: 1px solid #15C46C;
+    border-bottom: 1px solid #15C46C;
+    border-left: 1px solid #15C46C;
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+a:hover {
+    color: #15C46C;
+    -webkit-transition: color .4s ease-in;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -ms-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+}
+
+input[type='text'] {
+  display: block;
+  background-color: rgba(30, 30, 40, 1);
+  margin: 0;
+  width 100%;
+  font-family: 'Source Code Pro';
+  font-weight: 200;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type='text']:focus {
+  outline: none;
+}
+
+.underline input[type='text'] {
+  padding: 10x;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  tansition: border 2s;
+}
+
+.underline input[type='text']:focus,
+.underline input[type='text'].focus {
+  color: #15C46C;
+  border-bottom: solid 2px #969696;
+}
+
+/* ---------------------------- */
+/* Flashy text                  */
+/* ---------------------------- */
+
+.blink {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: .4s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.content {
+    background: rgba(30, 30, 40, 1);
+    width: 70%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px;
+    box-shadow: 4px 4px;
+}
+
+.btn {
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid;
+    color: #ffffff;
+    -webkit-transition: color .4s ease-in;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -ms-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+}
+
+.btn:hover {
+    border: 1px solid;
+    color: #15C46C;
+    -webkit-transition: color .4s ease-in;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -ms-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { color: rgba(215, 118, 44, 0.9); }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { color: rgba(215, 118, 44, 0.9); }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { color: rgba(215, 118, 44, 0.9); }
+    100% { opacity: 1.0; }
+}
