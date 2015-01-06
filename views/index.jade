@@ -4,27 +4,14 @@ html
     head
         title Cory Sabol
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
-        link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
-        //- link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
+        //- link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
+        link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
     body
-        div( class='content' )
-            h1( class='blink' )
-                | > Cory Sabol
-            p
-                | I write code and design web pages. I also fancy myself a game developer and designer in my spare time.
-            h1( class='blink' )
-                | > The things that I know
-            h1( class='blink' )
-                | > The things I have done
-            div#projects()
-                a( class='btn', href='https://sible777.github.io/Terra.js' ) 
-                    | Terra.js
-            h1( class='blink' )
-                | > Contact me
-                div#contact_container
-                    form#contact_form( class='underline', action='/email' )
-                        input#email( name='user_email', type='text', placeholder='Your email please.' )
-                        input#name( name='user_name', type='text', placeholder='Your name (optional).' )
-                        input#company( name='user_company', type='text', placeholder='Your company if you will.' )
-                        input#message( name='user_message', type='text', placeholder='Say something.' )
-                        input#submit( class='btn',name='contact_submit', type='submit', value='Send')
+        div#container( class='container' )
+            div#imageBox( class='imageBox' ) 
+                img#myFace( src='/images/me.jpg', width=200, height=200 )
+            div#header( class='header' )
+                h1
+                    | Cory Sabol
+                h2
+                    | Programmer. Game Designer. Pixel Artist. Musician.

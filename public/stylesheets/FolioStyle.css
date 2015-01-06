@@ -2,10 +2,13 @@ html {
     background: rgba(40, 40, 50, 1);
 }
 
-h1 {
+h1, h2 {
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Source Code Pro';
   font-weight: 200;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -132,7 +135,7 @@ input[type='text']:focus {
     animation-iteration-count: infinite;
 }
 
-.content {
+.container {
     background: rgba(30, 30, 40, 1);
     width: 70%;
     max-width: 800px;
@@ -161,6 +164,12 @@ input[type='text']:focus {
     -o-transition: color .4s ease-in;
     -ms-transition: color .4s ease-in;
     transition: color .4s ease-in;
+}
+
+.imageBox {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @-moz-keyframes blinker {
