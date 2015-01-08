@@ -8,9 +8,14 @@ h1, h2 {
   color: rgba(215, 118, 44, 0.9);
   font-family: 'Source Code Pro';
   font-weight: 200;
+  text-align: center;
+  font-size: 120px;
+  margin-bottom: 0px;
   /*width: 60%;
   margin-left: auto;
   margin-right: auto;*/
+  border-bottom: 3px solid grey;
+
 }
 
 p, ul {
@@ -24,6 +29,12 @@ p, ul {
   /* color: rgba(215, 118, 44, 0.9); */
   font-family: 'Source Code Pro';
   font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
 }
 
 li:hover, p:hover {
@@ -53,7 +64,9 @@ input[type='submit']:focus {
 a {
     font-family: 'Source Code Pro';
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 40px;
+    /*color: rgba(255, 255, 255, 0.9);*/
+    color: rgba(0, 0, 0, 0);
     -webkit-transition: color .4s ease-in;
     -moz-transition: color .4s ease-in;
     -o-transition: color .4s ease-in;
@@ -65,8 +78,10 @@ a:link {
     /*font-family: 'Source Code Pro', ;*/
     /*font-weight: 200;*/
     text-decoration: none;
-    background-color: rgba(30, 30, 40, 1);
-    color: rgba(255, 255, 255, 0.9);
+    /*background-color: rgba(30, 30, 40, 1);*/
+    background-color: rgba(0, 0, 0, 0);
+    /*color: rgba(255, 255, 255, 0.9);*/
+    color: grey;
     padding: 2px 6px 2px 6px;
     border-top: 1px solid #15C46C;
     border-right: 1px solid #15C46C;
@@ -75,7 +90,8 @@ a:link {
 }
 
 a:visited {
-    color: rgba(255, 255, 255, 0.9);
+    color: grey;
+    /*color: rgba(0, 0, 0, 0);*/
 }
 
 a:hover {
@@ -89,13 +105,13 @@ a:hover {
 
 input[type='text'] {
   display: block;
-  background-color: rgba(30, 30, 40, 1);
+  background-color: rgba(0, 0, 0, 0);
   margin: 0;
   width 100%;
   font-family: 'Source Code Pro';
   font-weight: 200;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.9);
+  color: #15C46C;
   appearance: none;
   box-shadow: none;
   border-radius: none;
@@ -104,15 +120,15 @@ input[type='text']:focus {
   outline: none;
 }
 
-#header > h1 {
-    font-size: 120px;
-    margin-bottom: 0px;
-}
-
 .content {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    /*text-align: center;*/
+}
+
+#content {
+    /*display: none;*/
 }
 
 .underline input[type='text'] {
@@ -126,27 +142,6 @@ input[type='text']:focus {
 .underline input[type='text'].focus {
   color: #15C46C;
   border-bottom: solid 2px #969696;
-}
-
-/* ---------------------------- */
-/* Flashy text                  */
-/* ---------------------------- */
-
-.blink {
-    -webkit-animation-name: blinker;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-
-    -moz-animation-name: blinker;
-    -moz-animation-duration: .4s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-
-    animation-name: blinker;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 .container {
@@ -164,7 +159,8 @@ input[type='text']:focus {
 .btn {
     padding: 2px 6px 2px 6px;
     border-top: 1px solid;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: rgba(0, 0, 0, 0);
     -webkit-transition: color .4s ease-in;
     -moz-transition: color .4s ease-in;
     -o-transition: color .4s ease-in;
@@ -187,22 +183,4 @@ input[type='text']:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-@-moz-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { color: rgba(215, 118, 44, 0.9); }
-    100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { color: rgba(215, 118, 44, 0.9); }
-    100% { opacity: 1.0; }
-}
-
-@keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { color: rgba(215, 118, 44, 0.9); }
-    100% { opacity: 1.0; }
 }

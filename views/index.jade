@@ -13,12 +13,12 @@ html
             div#header( class='content' )
                 h1( class='blink' )
                     | Cory Sabol
-                p
+                p( style='text-align: center;')
                     | Programmer. Web Designer. Game Designer. Mountain Biker.
             div#content( class='content' )
                 h1( class='blink' )
-                    | A bit about me 
-                p
+                    | About
+                p( style='font-size: 40px;')
                     | I study computer science student at the
                     | University of North Carolina at Greensboro.
                     | I am a very driven and passionate developer, who
@@ -26,9 +26,8 @@ html
                     | I aim to become a professional web developer who is
                     | well rounded in back end and front end development.
                 h1( class='blink' )
-                    | What I can do
-                p
-                    | I have sufficient knowledge of various programming languages:
+                    | Skills
+                div#skillList( style='font-size: 60px;')
                     ul
                         li
                             | JavaScript
@@ -40,9 +39,20 @@ html
                             |C++
                         li
                             |Java
-                    p
-                        | I also have knowledge of tools such as NodeJS and MongoDB all of which
-                        | were used to create this page.
-                        | While I have a focus on the programming side of things I can also
-                        | design pages and interfaces with CSS, HTML or Jade.
-                    
+                        li
+                            | NodeJS
+                        li 
+                            | MongoDB
+                        li
+                            | CSS
+                        li
+                            | HTML
+                h1
+                    | Work
+                div#work
+                    a#terra( class='btn' href='https://sible777.github.io/Terra.js' )
+                        | Terra.js
+                h1
+                    | Contact
+                    form#contact-form( class='underline' )
+                        input#email( type='text' )
