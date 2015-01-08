@@ -1,9 +1,11 @@
 html {
-    background: rgba(40, 40, 50, 1);
+    /*background: rgba(40, 40, 50, 1);*/
+    background-image: url( '../images/cream_pixels.png' )
 }
 
 h1, h2 {
-  color: rgba(255, 255, 255, 0.9);
+  /*color: rgba(255, 255, 255, 0.9);*/
+  color: rgba(215, 118, 44, 0.9);
   font-family: 'Source Code Pro';
   font-weight: 200;
   /*width: 60%;
@@ -11,8 +13,9 @@ h1, h2 {
   margin-right: auto;*/
 }
 
-p {
-  color: rgba(255, 255, 255, 0.9);
+p, ul {
+  /*color: rgba(255, 255, 255, 0.9);*/
+  color: #15C46C;
   -webkit-transition: color .4s ease-in;
   -moz-transition: color .4s ease-in;
   -o-transition: color .4s ease-in;
@@ -23,7 +26,7 @@ p {
   font-weight: 200;
 }
 
-p:hover {
+li:hover, p:hover {
   /* color: rgba(215, 118, 44, 0.9);*/
   color: #15C46C;
   -webkit-transition: color .4s ease-in;
@@ -101,8 +104,13 @@ input[type='text']:focus {
   outline: none;
 }
 
+#header > h1 {
+    font-size: 120px;
+    margin-bottom: 0px;
+}
+
 .content {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,13 +150,15 @@ input[type='text']:focus {
 }
 
 .container {
-    background: rgba(30, 30, 40, 1);
-    width: 70%;
-    max-width: 800px;
+    /*background: rgba(30, 30, 40, 1);*/
+    /*background-image: url( ../images/darkEdges.png );*/
+    /*background-image: url( "../images/diagonales.png" );
+    background-repeat: repeat;*/
+    width: 90%;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px;
-    box-shadow: 4px 4px;
 }
 
 .btn {
@@ -173,7 +183,8 @@ input[type='text']:focus {
 }
 
 .imageBox {
-    width: 60%;
+    /*width: 60%;*/
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
