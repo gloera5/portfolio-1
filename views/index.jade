@@ -4,17 +4,24 @@ html
     head
         title Cory Sabol
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
+        link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
     body
-        div( class='content' )
-            h1( class='blink' )
-                | > Cory Sabol
-            p
-                | I write code and design web pages. I also fancy myself a game developer and designer in my spare time.
-            h1( class='blink' )
-                | > The things that I know
-            h1( class='blink' )
-                | > The things I have done
-            div#projects()
-                a( class='btn', href='https://sible777.github.io/Terra.js' ) 
-                    | Terra.js
+        div#container( class='container' )
+            //- div#imageBox( class='imageBox' ) 
+            //- img#myFace( class='imageBox' src='/images/me.jpg', width=200, height=200 )
+            div#header( class='content' )
+                h1( class='blink' )
+                    | Cory Sabol
+                p( style='text-align: center;')
+                    | Programmer. Web Designer. Game Designer. Mountain Biker.
+            div#content( class='content' )
+                div
+                    a#about( class='btn four column' )
+                        | About
+                    a#skills( class='btn four column' )
+                        | Skills
+                    a#work( class='btn four column' )
+                        | Work
+                    a#contact( class='btn four column' )
+                        | Contact
