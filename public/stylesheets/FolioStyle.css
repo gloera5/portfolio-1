@@ -20,7 +20,8 @@ h1, h2 {
 
 p, ul {
   /*color: rgba(255, 255, 255, 0.9);*/
-  color: #15C46C;
+  /*color: #15C46C;*/
+  color: grey;
   -webkit-transition: color .4s ease-in;
   -moz-transition: color .4s ease-in;
   -o-transition: color .4s ease-in;
@@ -66,7 +67,7 @@ a {
     font-weight: 200;
     font-size: 40px;
     /*color: rgba(255, 255, 255, 0.9);*/
-    color: rgba(0, 0, 0, 0);
+    color: grey;
     -webkit-transition: color .4s ease-in;
     -moz-transition: color .4s ease-in;
     -o-transition: color .4s ease-in;
@@ -131,6 +132,10 @@ input[type='text']:focus {
     /*display: none;*/
 }
 
+#buttons {
+    text-align: center;
+}
+
 .underline input[type='text'] {
   padding: 10x;
   border: none;
@@ -157,15 +162,16 @@ input[type='text']:focus {
 }
 
 .btn {
+    /*margin-left: 10px;*/
     padding: 2px 6px 2px 6px;
-    border-top: 1px solid;
+    border: 1px solid;
     /*color: #ffffff;*/
-    color: rgba(0, 0, 0, 0);
     -webkit-transition: color .4s ease-in;
     -moz-transition: color .4s ease-in;
     -o-transition: color .4s ease-in;
     -ms-transition: color .4s ease-in;
     transition: color .4s ease-in;
+    font-size: 25px;
 }
 
 .btn:hover {

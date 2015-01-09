@@ -4,7 +4,7 @@ html
     head
         title Cory Sabol
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
-        //- link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
+        link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
     body
         div#container( class='container' )
@@ -16,43 +16,12 @@ html
                 p( style='text-align: center;')
                     | Programmer. Web Designer. Game Designer. Mountain Biker.
             div#content( class='content' )
-                h1( class='blink' )
-                    | About
-                p( style='font-size: 40px;')
-                    | I study computer science student at the
-                    | University of North Carolina at Greensboro.
-                    | I am a very driven and passionate developer, who
-                    | will not rest until I have solved the problem at hand.
-                    | I aim to become a professional web developer who is
-                    | well rounded in back end and front end development.
-                h1( class='blink' )
-                    | Skills
-                div#skillList( style='font-size: 60px;')
-                    ul
-                        li
-                            | JavaScript
-                        li
-                            | Lua
-                        li
-                            | C#
-                        li
-                            |C++
-                        li
-                            |Java
-                        li
-                            | NodeJS
-                        li 
-                            | MongoDB
-                        li
-                            | CSS
-                        li
-                            | HTML
-                h1
-                    | Work
-                div#work
-                    a#terra( class='btn' href='https://sible777.github.io/Terra.js' )
-                        | Terra.js
-                h1
-                    | Contact
-                    form#contact-form( class='underline' )
-                        input#email( type='text' )
+                div
+                    a#about( class='btn four column' )
+                        | About
+                    a#skills( class='btn four column' )
+                        | Skills
+                    a#work( class='btn four column' )
+                        | Work
+                    a#contact( class='btn four column' )
+                        | Contact
