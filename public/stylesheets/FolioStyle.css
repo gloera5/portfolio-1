@@ -156,13 +156,16 @@ input[type='text']:focus {
     background-repeat: repeat;*/
     width: 90%;
     max-width: 950px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px;
 }
 
 .btn {
-    /*margin-left: 10px;*/
+    margin-bottom: 10px;
+    margin-left: 0px;
     padding: 2px 6px 2px 6px;
     border: 1px solid;
     /*color: #ffffff;*/
@@ -171,7 +174,7 @@ input[type='text']:focus {
     -o-transition: color .4s ease-in;
     -ms-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .btn:hover {
