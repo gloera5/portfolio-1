@@ -23,7 +23,7 @@ html
                     p#aboutContent
                         | I am curretly a computer science student and I love to code
                         | I also really enjoy creating appealing designs and designing games.
-                        | I am a multi-talented developer, with skills in design, programming, and music.
+                        | I am a multi-talented developer, with skills in design, programming, and music production.
                     a#skills( class='btn four column' )
                         | Skills
                     a#work( class='btn four column' )
@@ -32,9 +32,13 @@ html
                         | Contact
     script.
         $(document).ready( function() {
-            $('#aboutContent').hide();
-            $('#about').click( function() {
-                $('#aboutContent').show('slow');
+            $( '#aboutContent' ).hide();
+            $( '#about' ).click( function() {
+                if ( $( '#aboutContent' ).is( ':hidden' ) ) {
+                    $( '#aboutContent' ).slideDown( 'slow' );
+                } else {
+                    $( '#aboutContent' ).slideUp( 'slow' );
+                }
             });
         });
         
