@@ -3,6 +3,7 @@ doctype html
 html
     head
         title Cory Sabol
+        script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' )
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
         link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
@@ -14,14 +15,26 @@ html
                 h1( class='blink' )
                     | Cory Sabol
                 p( style='text-align: center;')
-                    | Programmer. Web Designer. Game Designer. Mountain Biker.
+                    | Web Developer. Game Designer. Electronic Musician. Mountain Biker.
             div#content( class='content' )
                 div
                     a#about( class='btn four column' )
                         | About
+                    p#aboutContent
+                        | I am curretly a computer science student and I love to code
+                        | I also really enjoy creating appealing designs and designing games.
+                        | I am a multi-talented developer, with skills in design, programming, and music.
                     a#skills( class='btn four column' )
                         | Skills
                     a#work( class='btn four column' )
                         | Work
                     a#contact( class='btn four column' )
                         | Contact
+    script.
+        $(document).ready( function() {
+            $('#aboutContent').hide();
+            $('#about').click( function() {
+                $('#aboutContent').show('slow');
+            });
+        });
+        
