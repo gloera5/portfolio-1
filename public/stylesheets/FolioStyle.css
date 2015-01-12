@@ -1,6 +1,7 @@
 html {
     /*background: rgba(40, 40, 50, 1);*/
-    background-image: url( '../images/cream_pixels.png' )
+    /*background-image: url( '../images/cream_pixels.png' )*/
+    background-image: url( '../images/brickwall.png' );
 }
 
 h1, h2 {
@@ -174,6 +175,7 @@ input[type='text']:focus {
     -ms-transition: color .4s ease-in;
     transition: color .4s ease-in;
     font-size: 24px;
+    background-image: url( '../images/cream_pixels.png' );
 }
 
 .btn:hover {

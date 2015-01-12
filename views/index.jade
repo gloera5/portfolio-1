@@ -20,12 +20,14 @@ html
                 div
                     a#about( class='btn four column' )
                         | About
-                    p#aboutContent
+                    p#aboutContent( class='accordionContent' )
                         | I am curretly a computer science student and I love to code
                         | I also really enjoy creating appealing designs and designing games.
                         | I am a multi-talented developer, with skills in design, programming, and music production.
                     a#skills( class='btn four column' )
                         | Skills
+                    p#skillsContent( class='accordionContent' )
+                        | lorem ipsum lorem ispum
                     a#work( class='btn four column' )
                         | Work
                     a#contact( class='btn four column' )
@@ -40,5 +42,8 @@ html
                     $( '#aboutContent' ).slideUp( 'slow' );
                 }
             });
+
+            // Apply the slide animation to the accordion list elements
+            var accordion = $( '#aboutContent' );
         });
         
