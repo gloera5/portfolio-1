@@ -4,44 +4,17 @@ html
     head
         title Cory Sabol
         script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' )
+        script( src='http://code.jquery.com/ui/1.11.4/jquery-ui.min.js' )
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
         link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
     body
-        div#container( class='container' )
-            //- div#imageBox( class='imageBox' ) 
-            //- img#myFace( class='imageBox' src='/images/me.jpg', width=200, height=200 )
-            div#header( class='content' )
-                h1( class='blink' )
-                    | Cory Sabol
-                p( style='text-align: center;')
-                    | Web Developer. Game Designer. Web Security Researcher. Mountain Biker.
-            div#content( class='content' )
-                div
-                    a#about( class='btn four column' )
-                        | About
-                    p#aboutContent( class='accordionContent' )
-                        | I am curretly a computer science student with an interest in web 
-                        | application vulnerability research and development as well as web
-                        | app development and design.
-                    a#skills( class='btn four column' )
-                        | Skills
-                    a#work( class='btn four column' )
-                        | Work
-                    a#contact( class='btn four column' )
-                        | Contact
-    script.
-        $(document).ready( function() {
-            $( '#aboutContent' ).hide();
-            $( '#about' ).click( function() {
-                if ( $( '#aboutContent' ).is( ':hidden' ) ) {
-                    $( '#aboutContent' ).slideDown( 'slow' );
-                } else {
-                    $( '#aboutContent' ).slideUp( 'slow' );
-                }
-            });
-
-            // Apply the slide animation to the accordion list elements
-            var accordion = $( '#aboutContent' );
-        });
-        
+        div#term( class='term' )
+            p      
+                |./about
+            p
+                |Cory Sabol is a really cool guy.
+            p
+                |cory Sabol doesn't afraid of anything.
+                span
+                    |_

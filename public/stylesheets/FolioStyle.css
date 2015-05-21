@@ -1,7 +1,5 @@
 html {
-    /*background: rgba(40, 40, 50, 1);*/
-    /*background-image: url( '../images/cream_pixels.png' )*/
-    background-image: url( '../images/brickwall.png' );
+  background-image: url( ../images/tactile_noise.png );    
 }
 
 h1, h2 {
@@ -30,8 +28,12 @@ p, ul {
   /* color: rgba(215, 118, 44, 0.9); */
   font-family: 'Source Code Pro';
   font-weight: 200;
-  font-size: 30px;
-  text-align: center;
+  font-size: 14px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
 }
 
 ul {
@@ -121,20 +123,10 @@ input[type='text']:focus {
   outline: none;
 }
 
-.content {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    /*text-align: center;*/
-}
-
-#content {
-    /*display: none;*/
-}
-
 #buttons {
     text-align: center;
 }
+
 
 .underline input[type='text'] {
   padding: 10x;
@@ -149,18 +141,19 @@ input[type='text']:focus {
   border-bottom: solid 2px #969696;
 }
 
-.container {
-    /*background: rgba(30, 30, 40, 1);*/
-    /*background-image: url( ../images/darkEdges.png );*/
-    /*background-image: url( "../images/diagonales.png" );
-    background-repeat: repeat;*/
-    width: 90%;
-    max-width: 950px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 10px;
+.term {
+  width:500px;
+  height:300px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-150px 0 0 -250px;
+}
+#term {
+  background-color: #021b21;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff5879;
 }
 
 .btn {
@@ -175,7 +168,6 @@ input[type='text']:focus {
     -ms-transition: color .4s ease-in;
     transition: color .4s ease-in;
     font-size: 24px;
-    background-image: url( '../images/cream_pixels.png' );
 }
 
 .btn:hover {
@@ -188,9 +180,33 @@ input[type='text']:focus {
     transition: color .4s ease-in;
 }
 
-.imageBox {
-    /*width: 60%;*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/*p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}*/
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
 }
