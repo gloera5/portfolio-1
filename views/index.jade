@@ -4,17 +4,27 @@ html
     head
         title Cory Sabol
         script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' )
-        script( src='http://code.jquery.com/ui/1.11.4/jquery-ui.min.js' )
+        script( src='/js/typed.min.js' )
         link( href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css' )
         link( rel='stylesheet', href='/stylesheets/skeleton/skeleton.css' )
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
+        script.
+            $(function(){
+                $(".typed_txt").typed({
+                    strings: [
+                        "<p>./about</P>",
+                        "<p>> Cory Sabol is a cool ass mofo.</p>",
+                        "<p>> Like seriously he is the coolest dude ever.</p>"
+                    ],
+                    typeSpeed: 0,
+                    cursorChar: '|',
+                    callback: function() {
+                       output = Document.getElementById('term_output'); 
+                       output.innerHTML = output.innerHTML + strings[0];
+                    }
+                });
+            });
     body
-        div#term( class='term' )
-            p      
-                |./about
-                p
-                    |blah blahalkdjsdfljaflkjsdflkjsf
-                    |ldalkfjdslfkjsflksjflksjflskflskjflsjflskjflskjflskdjfslkdfjsdf
-                    |I want this fucking text to wrap dammit.
-                    span
-                        |_
+        div#term
+            div#term_output
+            div( class='typed_txt' )
