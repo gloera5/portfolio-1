@@ -4,27 +4,28 @@
 	<meta charset="utf-8">
 	<title>Cory Sabol</title>
 	<script type="text/javascript" src="js/typewriter-bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css'>
+    <link rel='stylesheet', href='/stylesheets/skeleton/skeleton.css'>
 </head>
 <body>
-	<h1>This is just a test</h1>
-
 	<style>
-  	body {
+  	/*body {
     	font-family: courier, fixed;
     	font-size: 13px;
-  	}
-  	.typewriter {
+  	}*/
+  	/*.typewriter {
     	white-space: pre-wrap;
     	margin-right: -6px;
-  	}
+  	}*/
   	.caret {
     	background: #777;
   	}
 	</style>
 	
-	<div id="wrapper">
-  	<span id="typewriter" class="term"></span>
-  	<span class="caret">&nbsp;</span>
+	<div id="wrapper" class="term">
+  	<span id="typewriter"></span>
+  	<span class="caret">|</span>
 	</div>
 	
 	<script type="text/javascript">
@@ -34,19 +35,16 @@
                              	.withMinimumSpeed(5)
                              	.withMaximumSpeed(17)
                              	.build();
-  	tw.put('$ ')
-    	.waitRange(500, 1000)
-    	.type('ls realistic-typewriter.js')
+  	tw.waitRange(500, 1000)
+    	.type('var CorySabol = {')
     	.put('<br/>')
-    	.waitRange(1000, 1500)
-    	.put('ls: realistic-typewriter.js: No such file or directory<br/>')
-    	.put('$ ')
-    	.waitRange(1000, 1500)
-    	.type('exit')
+    	.type('		skills: {')
     	.put('<br/>')
-    	.wait(500)
-    	.put('logout<br/><br/>')
-    	.put('[Process completed]<br/>');
+    	.type('javascript: true')
+    	.put('<br/>')
+    	.type('}')
+    	.put('<br/>')
+    	.type('};')
 	</script>
 </body>
 </html>

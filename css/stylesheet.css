@@ -1,5 +1,5 @@
 html {
-  background-image: url( ../images/tactile_noise.png );    
+  background-image: url( ../assets/simple_dashed/simple_dashed.png );    
 }
 
 h1, h2 {
@@ -120,7 +120,8 @@ input[type='text']:focus {
   border-bottom: solid 2px #969696;
 }
 
-#term {
+.term {
+  /*white-space: pre-wrap;*/
   background-color: #021b21;
   border-style: solid;
   border-width: 2px;
@@ -160,7 +161,7 @@ input[type='text']:focus {
     transition: color .4s ease-in;
 }
 
-p, ul {
+p, ul, span {
   color: grey;
   -webkit-transition: color .4s ease-in;
   -moz-transition: color .4s ease-in;
