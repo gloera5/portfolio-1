@@ -10,21 +10,43 @@ html
         link( rel='stylesheet', href='/stylesheets/FolioStyle.css' )
         script.
             $(function(){
+                var textTarget = ".typed_txt";
                 $(".typed_txt").typed({
                     strings: [
-                        "<p>./about</P>",
-                        "<p>> Cory Sabol is a cool ass mofo.</p>",
-                        "<p>> Like seriously he is the coolest dude ever.</p>"
-                    ],
+                        "<p style='white-space:pre-wrap;'>"
+                        + "&#60;html&#62;<br>"
+                        + "&#60;head&#62;<br>"
+                        + "&#60;script type='text/javascript'&#62;<br>"
+                        + "     var CorySabol = {<br>"
+                        + "         skills: {<br>"
+                        + "             JavaScript: true,<br>"
+                        + "             HTML: true,<br>"
+                        + "             CSS: true,<br>"
+                        + "             Ninjitsu: false<br>"
+                        + "         }<br>"
+                        + "     };<br>"
+                        + "&#60;/script&#62;<br>"
+                        + "&#60;/head&#62;<br>"
+                        + "&#60;body&#62;<br>"
+                        + "     &#60;h1&#62;Things That I do&#60;/h1&#62;<br>"
+                        + "     &#60;ul&#62;<br>"
+                        + "         &#60;li&#62;Full-stack web development&#60;/li&#62;<br>"
+                        + "         &#60;li&#62;Web-app security testing&#60;/li&#62;<br>"
+                        + "         &#60;li&#62;Game Design&#60;/li&#62;<br>"
+                        + "         &#60;li&#62;Music production&#60;/li&#62;<br>"
+                        + "     &#60;/ul&#62<br>"
+                        + "&#60;/body&#62;<br>"
+                        + "&#60;/html&#62;<br>"
+                        + "&#60;a href='https://www.github.com/sible777&#62;&#60;/a&#62;"
+                        + "</p><br>"
+                    ], 
                     typeSpeed: 0,
-                    cursorChar: '|',
-                    callback: function() {
-                       output = Document.getElementById('term_output'); 
-                       output.innerHTML = output.innerHTML + strings[0];
+                    onStringTyped: function() {
+
                     }
                 });
             });
     body
         div#term
-            div#term_output
-            div( class='typed_txt' )
+            div#typed_output( class='typed_txt' )
+            a( href="https://www.github.com/sible777" )

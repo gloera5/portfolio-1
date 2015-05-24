@@ -125,14 +125,16 @@ input[type='text']:focus {
   border-style: solid;
   border-width: 2px;
   border-color: #ff5879;
-  width:500px;
-  height:300px;
+  width:700px;
+  height:600px;
   position:absolute;
   left:50%;
   top:50%;
   padding: 5px 5px 5px 5px;
-  margin:-150px 0 0 -250px;
+  margin:-300px 0 0 -350px;
 }
+
+.tab { margin-left: 40px; }
 
 .btn {
     margin-bottom: 10px;
