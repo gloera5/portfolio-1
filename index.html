@@ -3,80 +3,69 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cory Sabol</title>
-	<script type="text/javascript" src="js/typewriter-bundle.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200', rel='stylesheet', type='text/css'>
-    <link rel='stylesheet', href='/stylesheets/skeleton/skeleton.css'>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js'></script>
 </head>
 <body>
-	<style>
-  	/*body {
-    	font-family: courier, fixed;
-    	font-size: 13px;
-  	}*/
-  	/*.typewriter {
-    	white-space: pre-wrap;
-    	margin-right: -6px;
-  	}*/
-  	.caret {
-    	background: #777;
-  	}
-	</style>
-	
-	<div id="wrapper" class="term">
-  	<span id="typewriter" style="white-space: pre-wrap;"></span>
-  	<span class="caret">|</span>
+	<div class='center container'>
+		<div id='terra' class='terra'>
+		</div>
+		<br>
+		<div id='about'>
+			<h2>Just who am I anyhow?</h2>
+			<hr>
+			<p>My name is Cory Sabol. I'm a computer programmer, who dabbles in computer security and game design.</p>
+			<p>My main focus however is web development and design. I love that I can take code and create something useful and beautiful.</p>	
+		</div>
+		<br>
+		<div id='languages'>
+			<h2>What I know.</h2>	
+			<hr>
+			<div>
+				<h3>JavaScript</h3>
+				<p>I suppose you could say that JavaScript is my favorite language. Despite all of it's flaws it's a very flexible and robust language.
+					You can't avoid it either, it's everywhere on the web and now it's even on the server side!</p>
+			</div>
+			<div>
+				<h3>Java</h3>
+				<p>Java is a language I have become very familiar with through school projects. I can't claim to have used it for much of anything
+					outside of academic work. But if you really need to have names proceedurally generated using markov chains then I've go you covered
+					with <a href=''>N-Gen</a>.
+				</p>
+			</div>
+			<div>
+				<h3>Lua</h3>
+				<p>Lua is another one of the "fun" languages. I really enjoy using it for it's extreme flexibility and rapid prototyping.
+					As with Java I haven't used the language for much other than my own hobby game projects. You can check out <a href=''>SGEngine</a> 
+					and the original game jam version of Super <a href=''>Chair Balance Sim 2014</a>(that I coded in 6 hours).
+				</p>
+			</div>
+		</div>
+		<br>
+		<div id='projects'>
+			<h2>Projects</h2>
+			<hr>
+			<p></p>			
+		</div>
 	</div>
-	
-	<script type="text/javascript">
-  		var typewriter = require('typewriter');
-  		var twSpan = document.getElementById('typewriter');
-  		var tw = typewriter(twSpan).withAccuracy(95)
-                             	.withMinimumSpeed(5)
-                             	.withMaximumSpeed(17)
-                             	.build();
-  		tw.waitRange(500, 1000)
-  			.type('<!DOCTYPE html>')
-  			.put('<br/>')
-  			.type('<html>')
-  			.put('<br/>')
-  			.type('<head>')
-  			.put('<br/>')
-  			.type('<title>Cory Sabol is Awesome</title>')
-  			.put('<br/>')
-  			.type('</head>')
-  			.put('</br>')
-  			.type('<body>')
-  			.put('<br/>')
-  			.type('<script>')
-  			.put('<br/>')
-    		.type('var CorySabol = {')
-    		.put('<br/>')
-    		.put('    ')
-    		.type('skills: {')
-    		.put('<br/>')
-    		.put('        ')
-    		.type('JavaScript: true,')
-    		.put('<br/>')
-    		.put('        ')
-    		.type('CSS: true,')
-    		.put('<br/>')
-    		.put('        ')
-    		.type('HTML: true,')
-    		.put('<br/>')
-    		.put('        ')
-    		.type('Ninjitsu: false')
-    		.put('<br/>')
-    		.put('    ')
-    		.type('}')
-    		.put('<br/>')
-    		.type('};')
-    		.put('<br/>')
-    		.type('</scr'+'ipt>') // This keeps the interpreter from stopping.
-  			.put('<br/>')
-  			.type('</body>')
-  			.put('<br/>')
-  			.type('</html>');
+
+	<script src='js/Terra.js/js/Terra.js'></script>
+	<script type='text/javascript'>
+		var clock = new THREE.Clock();
+		//document.body.appendChild( container );
+		var parentElem = document.getElementById('terra');
+		
+		var terrain = new Terrain(5, parentElem);
+		terrain.generate(0.7)
+		var map = terrain.map;
+		
+		console.log(map + ' ' + terrain.size);
+		console.log(map.length);
+
+		console.log('container width: ' + parentElem.offsetWidth);
+		console.log('container height: ' + parentElem.offsetHeight);
+		
+		terrain.draw(map);	
 	</script>
 </body>
 </html>
