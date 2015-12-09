@@ -93,7 +93,7 @@ Terrain.prototype.draw = function(map) {
 	renderer.setClearColor( 0x000000, 0 );
   	this.parentElem.appendChild( renderer.domElement );
 
-	camera.position.set( 0, -3, 0 ); 
+	camera.position.set( 1, -4, 0 ); 
 
   	var geometry = new THREE.PlaneGeometry( this.size*2, this.size*2, this.max, this.max );
   	geometry.dynamic = true;
@@ -131,6 +131,7 @@ Terrain.prototype.draw = function(map) {
   	  	plane.rotation.z += 0.003;
   	  	//controls.update( clock.getDelta() );
   	  	renderer.render( scene, camera );
+		//console.log(color);
   	};
   	render();
 };
