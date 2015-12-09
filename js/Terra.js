@@ -90,7 +90,7 @@ Terrain.prototype.draw = function(map) {
 
 	// Need to set this to instead get the height and width of the parent container
   	renderer.setSize( renderWidth, renderHeight );
-	renderer.setClearColor( 0xffffff, 1 );
+	renderer.setClearColor( 0x000000, 0 );
   	this.parentElem.appendChild( renderer.domElement );
 
 	camera.position.set( 0, -3, 0 ); 
