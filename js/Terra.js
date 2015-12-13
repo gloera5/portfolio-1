@@ -106,7 +106,7 @@ Terrain.prototype.draw = function(map) {
 
   	var material = new THREE.MeshBasicMaterial({
   	  	wireframe: true,
-  	  	color: 0xffffff
+  	  	color: 0x000000
   	});
 
   	var plane = new THREE.Mesh( geometry, material );
