@@ -1,6 +1,8 @@
 body {
-	background-image: url('../assets/concrete_seamless/concrete_seamless.png');
+	/*background-image: url('../assets/concrete_seamless/concrete_seamless.png');*/
+	background-color: #000000;
 	font-family: 'Dosis', sans-serif;
+	color: #ffffff;
 }
 
 h1, h2, h3 {
@@ -11,8 +13,9 @@ h1, h2, h3 {
 hr {
 	border: 0;
 	height: 1px;
-	background: #333;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc);
+/* 	background: #333; */
+	background: #ffffff;
+	/*background-image: linear-gradient(to right, #ccc, #333, #ccc);*/
 }
 
 p {
@@ -22,6 +25,8 @@ p {
 	height: 150px;
 	width: auto;
 	position: relative;
+/* 	animation: colorchange 50s; 
+	-webkit-animation: colorchange 50s; */
 }
 
 .center {
@@ -34,12 +39,30 @@ canvas {
 }
 
 .container {
+	padding: 10px;
 	width: 70%;
 	max-width: 800px;
+	border: 1px solid;
 }
 
 .pastel_red {
 	color: #FF6961;
+}
+
+@keyframes colorchange {
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	75%  {background: green;}
+	100% {background: red;}
+}
+
+@-webkit-keyframes colorchange {
+	0%   {background: red;}
+	25%  {background: yellow;}
+	50%  {background: blue;}
+	75%  {background: green;}
+	100% {background: red;}
 }
 
 @media (min-width: 600px) {
