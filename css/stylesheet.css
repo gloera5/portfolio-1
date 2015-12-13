@@ -1,10 +1,10 @@
 body {
 	background-image: url('../assets/concrete_seamless/concrete_seamless.png');
+	font-family: 'Dosis', sans-serif;
 }
 
 h1, h2, h3 {
-	font-family: 'Roboto', 'sans-serif';
-	font-weight: 300;
+	font-family: 'Wire One', sans-serif;
 }
 
 /* Gradient color1 - color2 - color1 */
@@ -16,8 +16,6 @@ hr {
 }
 
 p {
-	font-family: 'Roboto', 'sans-serif';
-	font-weight: 300;
 }
 
 .terra {

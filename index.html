@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cory Sabol</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Wire+One|Dosis' rel='stylesheet' type='text/css'>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js'></script>
 </head>
 <body>
@@ -72,6 +73,13 @@
 		console.log('container height: ' + parentElem.offsetHeight);
 
 		terrain.draw(map);
+
+		// We need to create an event listener to listen for window resizes.
+		// On a window resize event we then need to resize the canvas element properly.
+		// It's possible that we can refresh it somehow?
+		function resizeCanvas() {
+			var c = document.getElementById( 'terra' );
+		}
 	</script>
 </body>
 </html>
