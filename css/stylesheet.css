@@ -47,3 +47,10 @@ canvas {
 @media (min-width: 600px) {
 	body { font-size: 1.2em; }
 }
+
+@media (max-width: 600px) {
+	.container {
+		width: 90%;
+		max-width: 800px;
+	}
+}
