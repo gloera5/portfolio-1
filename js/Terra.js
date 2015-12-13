@@ -93,7 +93,7 @@ Terrain.prototype.draw = function(map) {
 	renderer.setClearColor( 0x000000, 0 );
   	this.parentElem.appendChild( renderer.domElement );
 
-	camera.position.set( 1, -4, 0 ); 
+	camera.position.set( 1, -4, 0 );
 
   	var geometry = new THREE.PlaneGeometry( this.size*2, this.size*2, this.max, this.max );
   	geometry.dynamic = true;
@@ -106,7 +106,7 @@ Terrain.prototype.draw = function(map) {
 
   	var material = new THREE.MeshBasicMaterial({
   	  	wireframe: true,
-  	  	color: 0x000000
+  	  	color: 0xffffff
   	});
 
   	var plane = new THREE.Mesh( geometry, material );
