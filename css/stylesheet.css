@@ -7,12 +7,12 @@ h1, h2, h3 {
 	font-weight: 300;
 }
 
-/* Gradient color1 - color2 - color1 */ 
-hr { 
-	border: 0; 
-	height: 1px; 
-	background: #333; 
-	background-image: linear-gradient(to right, #ccc, #333, #ccc); 
+/* Gradient color1 - color2 - color1 */
+hr {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 p {
@@ -22,13 +22,13 @@ p {
 
 .terra {
 	height: 150px;
-    width: auto;
+	width: auto;
 	position: relative;
 }
 
 .center {
 	margin-left: auto;
-    margin-right: auto;	
+	margin-right: auto;
 }
 
 canvas {
@@ -36,11 +36,14 @@ canvas {
 }
 
 .container {
-    width: 50%;
-    max-width: 940px;
+	width: 70%;
+	max-width: 800px;
 }
 
 .pastel_red {
 	color: #FF6961;
 }
 
+@media (min-width: 600px) {
+	body { font-size: 1.2em; }
+}

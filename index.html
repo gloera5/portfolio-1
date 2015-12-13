@@ -2,25 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<!-- The viewport is critical to the site being responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cory Sabol</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js'></script>
 </head>
 <body>
 	<div class='center container'>
+		<div id='title'>
+
+		</div>
 		<div id='terra' class='terra'>
 		</div>
 		<br>
 		<div id='about'>
 			<h2>Just who am I anyhow?</h2>
 			<hr>
-			<p>My name is <span class='pastel_red'>Cory Sabol</span>. I'm a computer programmer, 
-				who dabbles in computer security and game design.</p>
-			<p>My main focus however is web development and design. I love that I can take code and create something useful and beautiful.</p>	
+			<p>My name is <span class='pastel_red'>Cory Sabol</span>. I'm a computer programmer,
+				who dabbles in web security and game design.</p>
+			<p>My main focus however is web development and design. I love that I can take code and create something useful and beautiful.</p>
 		</div>
 		<br>
 		<div id='languages'>
-			<h2>What I know.</h2>	
+			<h2>What I know.</h2>
 			<hr>
 			<div>
 				<h3>JavaScript</h3>
@@ -37,7 +42,7 @@
 			<div>
 				<h3>Lua</h3>
 				<p>Lua is another one of the "fun" languages. I really enjoy using it for it's extreme flexibility and rapid prototyping.
-					As with Java I haven't used the language for much other than my own hobby game projects. You can check out <a href=''>SGEngine</a> 
+					As with Java I haven't used the language for much other than my own hobby game projects. You can check out <a href=''>SGEngine</a>
 					and the original game jam version of Super <a href=''>Chair Balance Sim 2014</a>(that I coded in 6 hours).
 				</p>
 			</div>
@@ -46,7 +51,7 @@
 		<div id='projects'>
 			<h2>Projects</h2>
 			<hr>
-			<p></p>			
+			<p></p>
 		</div>
 	</div>
 
@@ -55,18 +60,18 @@
 		var clock = new THREE.Clock();
 		//document.body.appendChild( container );
 		var parentElem = document.getElementById('terra');
-		
+
 		var terrain = new Terrain(5, parentElem);
 		terrain.generate(0.7)
 		var map = terrain.map;
-		
+
 		console.log(map + ' ' + terrain.size);
 		console.log(map.length);
 
 		console.log('container width: ' + parentElem.offsetWidth);
 		console.log('container height: ' + parentElem.offsetHeight);
-		
-		terrain.draw(map);	
+
+		terrain.draw(map);
 	</script>
 </body>
 </html>
