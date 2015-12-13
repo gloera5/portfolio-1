@@ -11,12 +11,11 @@
 </head>
 <body>
 	<div class='center container'>
-		<div id='title'>
-
-		</div>
-		<div id='terra' class='terra'>
-		</div>
-		<br>
+		<div id='title'></div>
+		<div id='terra' class='terra'></div>
+	</div>
+	<br>
+	<div class='center container'>
 		<div id='about'>
 			<h2><span class='pastel_red'>CORY SABOL</span></h2>
 			<hr>
@@ -24,6 +23,9 @@
 				who dabbles in web security and game design.</p>
 			<p>My main focus however is web development and design. I love that I can take code and create something useful and beautiful.</p>
 		</div>
+	</div>
+	<br>
+	<div class='center container'>
 		<br>
 		<div id='languages'>
 			<h2>What I know.</h2>
@@ -48,7 +50,9 @@
 				</p>
 			</div>
 		</div>
-		<br>
+	</div>
+	<br>
+	<div class='center container'>
 		<div id='projects'>
 			<h2>Projects</h2>
 			<hr>
@@ -78,8 +82,13 @@
 		// On a window resize event we then need to resize the canvas element properly.
 		// It's possible that we can refresh it somehow?
 		function resizeCanvas() {
+			// get the canvas element
 			var c = document.getElementById( 'terra' );
+
+			console.log( 'Window was resized, too bad we aren\'t doing anything about it yet :(' );
 		}
+
+		window.onresize = resizeCanvas;
 	</script>
 </body>
 </html>
