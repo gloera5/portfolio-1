@@ -11,42 +11,78 @@
 </head>
 <body>
 	<div class='center container'>
-		<div id='title'></div>
+		<div id='title'>
+			<h1><span class='pastel_red'>CORY SABOL</span></h1>
+		</div>
 		<div id='terra' class='terra'></div>
 	</div>
 	<br>
 	<div class='center container'>
 		<div id='about'>
-			<h2><span class='pastel_red'>CORY SABOL</span></h2>
-			<hr>
-			<p>My name is <span class='pastel_red'>Cory Sabol</span>. I'm a computer programmer,
-				who dabbles in web security and game design.</p>
-			<p>My main focus however is web development and design. I love that I can take code and create something useful and beautiful.</p>
+			<p>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</p>
 		</div>
 	</div>
 	<br>
 	<div class='center container'>
 		<br>
 		<div id='languages'>
-			<h2>What I know.</h2>
+			<h2>Languages</h2>
 			<hr>
 			<div>
 				<h3>JavaScript</h3>
-				<p>I suppose you could say that JavaScript is my favorite language. Despite all of it's flaws it's a very flexible and robust language.
-					You can't avoid it either, it's everywhere on the web and now it's even on the server side!</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
 			</div>
 			<div>
 				<h3>Java</h3>
-				<p>Java is a language I have become very familiar with through school projects. I can't claim to have used it for much of anything
-					outside of academic work. But if you really need to have names proceedurally generated using markov chains then I've go you covered
-					with <a href=''>N-Gen</a>.
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 				</p>
 			</div>
 			<div>
 				<h3>Lua</h3>
-				<p>Lua is another one of the "fun" languages. I really enjoy using it for it's extreme flexibility and rapid prototyping.
-					As with Java I haven't used the language for much other than my own hobby game projects. You can check out <a href=''>SGEngine</a>
-					and the original game jam version of Super <a href=''>Chair Balance Sim 2014</a>(that I coded in 6 hours).
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 				</p>
 			</div>
 		</div>
@@ -81,14 +117,8 @@
 		// We need to create an event listener to listen for window resizes.
 		// On a window resize event we then need to resize the canvas element properly.
 		// It's possible that we can refresh it somehow?
-		function resizeCanvas() {
-			// get the canvas element
-			var c = document.getElementById( 'terra' );
 
-			console.log( 'Window was resized, too bad we aren\'t doing anything about it yet :(' );
-		}
-
-		window.onresize = resizeCanvas;
+		window.onresize = terrain.reDraw;
 	</script>
 </body>
 </html>
