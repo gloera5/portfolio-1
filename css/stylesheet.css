@@ -99,7 +99,7 @@ canvas {
 	100% {background: red;}
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	body { font-size: 1.2em; }
 	.container {
 		padding: 10px;
