@@ -22,6 +22,21 @@ p {
 	padding: 5px;
 }
 
+#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar li {
+	padding: 3px;
+	display: inline;
+	width: 60px;
+}
+
+a {
+}
+
 .terra {
 	height: 250px;
 	width: auto;
@@ -43,8 +58,8 @@ p {
 
 canvas {
 	border: 1px solid;
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	display: block;
 }
 
@@ -53,10 +68,19 @@ canvas {
 	width: 60%;
 	max-width: 600px;
 	border: 1px solid;
+	box-shadow: inset -2px -2px 3px #a3a3a3;
 }
 
 .pastel_red {
 	color: #FF6961;
+}
+
+.btn {
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
 }
 
 @keyframes colorchange {
@@ -80,7 +104,6 @@ canvas {
 	.container {
 		padding: 10px;
 		width: 90%;
-		max-width: 700px;
 		border: 1px solid;
 	}
 }
